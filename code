@@ -1,0 +1,82 @@
+{
+	"Laravel public function method": {
+		"prefix": "pubf",
+		"body": [
+			"public function ${1}(${2})",
+			"{",
+			"	${3}",
+			"}${0}"
+		],
+		"description": "Laravel Public Function Method"
+	},
+	"Laravel public function contruct": {
+		"prefix": "_c",
+		"body": [
+			"public function __contruct(${1})",
+			"{",
+			"   ${2}",
+			"}${0}"
+		],
+		"description": "Laravel Public Function Method"
+	},
+	"Laravel public get controller": {
+		"prefix": "rg",
+		"body": [
+			"Route::get('${1}', [${2}::class, 'index${3}'])->name('${4}');${0}"
+		],
+		"description": "Laravel Public Get Controller"
+	},
+	"Laravel public show controller": {
+		"prefix": "rs",
+		"body": [
+			"Route::get('${1}', [${2}::class, 'show${3}'])->name('${4}');${0}"
+		],
+		"description": "Laravel Public Show Controller"
+	},
+	"Laravel public post controller": {
+		"prefix": "rp",
+		"body": [
+			"Route::post('${1}', [${2}::class, 'store${3}'])->name('${4}');${0}"
+		],
+		"description": "Laravel Public Post Controller"
+	},
+	"Laravel public pacth controller": {
+		"prefix": "rpa",
+		"body": [
+			"Route::patch('${1}', [${2}::class, 'update${3}'])->name('${4}');${0}"
+		],
+		"description": "Laravel Public Pacth Controller"
+	},
+	"Laravel public put controller": {
+		"prefix": "rpu",
+		"body": [
+			"Route::put('${1}', [${2}::class, 'update${3}'])->name('${4}');${0}"
+		],
+		"description": "Laravel Public Put Controller"
+	},
+	"Laravel public delete controller": {
+		"prefix": "rpu",
+		"body": [
+			"Route::delete('${1}', [${2}::class, 'destroy${3}'])->name('${4}');${0}"
+		],
+		"description": "Laravel Public Delete Controller"
+	},
+	"Laravel public route group middleware": {
+		"prefix": "rgm",
+		"body": [
+			"Route::middleware('${1}')->group(function () {",
+			"   ${2}",
+			"});${0}"
+		],
+		"description": "Laravel public route group middleware"
+	},
+	"Laravel public route group controller": {
+		"prefix": "rgc",
+		"body": [
+			"Route::controller('${1}::class')->group(function () {",
+			"   Route::${2}('${3}', '${4}')->name('${5}');",
+			"});${0}"
+		],
+		"description": "Laravel public route group controller"
+	},
+}
